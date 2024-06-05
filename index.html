@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="phone">
+        <div class="bar">
+            <span class="time"></span>
+            <div class="island"></div>
+            <div class="battery"><img id="bt" src="./images/battery.png"></div>
+        </div>
+
+        <div class="apps">
+            <button class="icons" id="clockBtn"> 
+                <img src="./images/clock.png"> 
+            </button>
+            <button class="icons" id="msgBtn"> 
+                <img src="./images/ios-message.png"> 
+            </button>
+            <button class="icons" id="cameraBtn"> 
+                <img src="./images/camera.png"> 
+            </button>
+            <button class="icons" id="calcBtn">
+                <img src="./images/calculator.png"> 
+           </button>
+        </div>
+        
+        
+        <div id="openClock">
+            <div id="clock"></div>
+        </div>
+        <div id="msg">
+            <h4>iMessage</h4>
+            <input id="writeMsg" placeholder="iMessage">
+        </div>
+        
+        <video id="webcam" autoplay></video>
+
+        <div id="calculator">
+            <input id="inputCalc">
+            <div id="calculatorBtn">
+                <button onclick="clearDisplay()" id="AC">AC</button>
+                <button onclick="operation('+')" id="plus">+</button>
+                <button onclick="appendToDisplay('7')" id="seven">7</button>
+                <button onclick="appendToDisplay('8')" id="eight">8</button>
+                <button onclick="appendToDisplay('9')" id="nine">9</button>
+                <button onclick="operation('-')" id="minus">-</button>
+                <button onclick="appendToDisplay('4')" id="four">4</button>
+                <button onclick="appendToDisplay('5')" id="five">5</button>
+                <button onclick="appendToDisplay('6')" id="six">6</button>
+                <button onclick="operation('*')" id="multiply">*</button>
+                <button onclick="appendToDisplay('1')" id="one">1</button>
+                <button onclick="appendToDisplay('2')" id="two">2</button>
+                <button onclick="appendToDisplay('3')" id="three">3</button>
+                <button onclick="calculate()" id="equal">=</button>
+                <button onclick="appendToDisplay('0')" id="zero">0</button>
+            </div>
+        </div>
+        
+
+        <button id="reset"></button>
+    </div>
+    
+        
+    
+    <script src="script.js"></script>
+</body>
+</html>
